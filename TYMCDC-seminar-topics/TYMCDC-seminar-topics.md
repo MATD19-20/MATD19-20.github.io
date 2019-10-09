@@ -6,7 +6,7 @@ Jeremy    25 Nov    Typemaking paradigms 2: Hot-metal and photo-typefaces
 Ryan      2 Dec     Typemaking paradigms 3: Early digital typefaces
 Keya      9 Dec     Typographic textures 1: lines and paragraphs
 ???       13 Jan    Typographic textures 2: typeface families
-Adriana   20 Jan    Typographic textures 3: global type, glpbal typography
+Adriana   20 Jan    Typographic textures 3: global type, global typography
 Michaela  27 Jan    Designers and makers 1: Romain du roi
 Radek     3 Feb     Designers and makers 2: Robin Kinross’ Modern typography
 ???       10 Feb    Designers and makers 3: Knuth / Hofstadter et al
