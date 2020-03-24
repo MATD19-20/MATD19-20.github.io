@@ -71,10 +71,9 @@ b {
     text-align: right !important;
 }
 
-footer > .right {
-    position: absolute;
-    right: 48px;
-    top: 96px;
+.footer-right {
+    text-align: right !important;
+    padding-right: 24px;
 }
 
 header{
