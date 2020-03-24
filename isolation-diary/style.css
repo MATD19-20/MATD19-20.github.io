@@ -362,6 +362,9 @@ footer > .copyright {
         grid-template-columns: 1fr 1fr;
         height: 84px;
     }
+     main > a .letter, main > div .letter{
+   font-size: 15rem;
+        }
     footer > .half {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -384,7 +387,7 @@ footer > .copyright {
         grid-template-columns: 1fr;
     }
     main > a .letter, main > div .letter{
-   font-size: 15rem;
+   font-size: 12rem;
         }
     footer > .half {
     grid-column-start: 1;
