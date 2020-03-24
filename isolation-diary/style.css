@@ -355,18 +355,34 @@ footer > .copyright {
 
 @media screen and (min-width: 720px) and (max-width: 1279px) {
     :root{
-        --left-padding:48px;
-        --right-padding:48px;
+        --left-padding:36px;
+        --right-padding:36px;
+    }
+    footer > .half {
+    grid-column-start: 1;
+    grid-column-end: 3;
     }
 }
 
 @media screen and (min-width: 480px) and (max-width: 719px) {
    :root{
-        --left-padding:0px;
-        --right-padding:0px;
+        --left-padding:24px;
+        --right-padding:24px;
+    }
+    footer > .half {
+    grid-column-start: 1;
+    grid-column-end: 3;
     }
 }
 
 @media screen and (max-width: 480px) {
+    :root{
+        --left-padding:12px;
+        --right-padding:12px;
+    }
+    footer > .half {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    }
     
 }
