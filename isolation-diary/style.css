@@ -389,6 +389,9 @@ footer > .copyright {
     intro{
         grid-template-columns: 1fr;
     }
+    .intro-img > img {
+        float: left;
+    }
     main > a .letter, main > div .letter{
    font-size: 12rem;
         }
@@ -436,6 +439,9 @@ footer > .copyright {
     }
     intro{
         grid-template-columns: 1fr;
+    }
+    .intro-img > img {
+        float: left;
     }
     main > a .letter, main > div .letter{
    font-size: 10rem;
