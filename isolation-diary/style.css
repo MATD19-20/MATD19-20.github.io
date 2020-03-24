@@ -68,12 +68,7 @@ b {
     text-align: right !important;
 }
 
-.footer-right {
-    text-align: right !important;
-    padding-right: 24px;
-    font-size: 3rem;
-    line-height: 0%;
-}
+/* Header */
 
 header{
      display: grid;
@@ -122,6 +117,7 @@ intro{
 
 
 
+/* Main */
 
 main {
     display: grid;
@@ -270,6 +266,10 @@ main > div .description {
     text-align: right;
 }
 
+
+/* Footer */
+
+
 footer {
     
     background-color: var(--dark);
@@ -334,6 +334,7 @@ footer > .copyright {
 }
 
 
+/* Spaces */
 
 .space-XL{
     height: 256px;
@@ -351,7 +352,7 @@ footer > .copyright {
     height: 48px;   
 }
 
-
+/* Media queries */
 
 @media screen and (min-width: 720px) and (max-width: 1279px) {
     :root{
