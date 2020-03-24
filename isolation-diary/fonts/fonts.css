@@ -1,0 +1,12 @@
+@font-face {
+ font-family: 'Literata';
+    font-weight: 400 700;
+ src: url('Literata-VariableFont_wght.woff2') format('woff2');
+}
+
+
+@font-face {
+ font-family: 'Isolation';
+    font-weight: 100 900;
+ src: url('IsolationGX.woff2') format('woff2');
+}
