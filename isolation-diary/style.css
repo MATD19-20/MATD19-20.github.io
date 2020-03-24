@@ -74,6 +74,8 @@ b {
 .footer-right {
     text-align: right !important;
     padding-right: 24px;
+    font-size: 3rem;
+    line-height: 0%;
 }
 
 header{
