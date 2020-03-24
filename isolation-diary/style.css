@@ -190,7 +190,7 @@ main {
 main > a .letter, main > div .letter{
         text-align: center;
         padding:12px;
-        font-size: 24rem;
+        font-size: 20rem;
         font-family: Isolation !important;
         animation: isol 32s linear infinite;
         line-height: 100%;
@@ -384,7 +384,7 @@ footer > .copyright {
         grid-template-columns: 1fr;
     }
     main > a .letter, main > div .letter{
-   font-size: 16rem;
+   font-size: 15rem;
         }
     footer > .half {
     grid-column-start: 1;
@@ -429,7 +429,7 @@ footer > .copyright {
         grid-template-columns: 1fr;
     }
     main > a .letter, main > div .letter{
-   font-size: 12rem;
+   font-size: 10rem;
         }
     footer > .half {
     grid-column-start: 1;
