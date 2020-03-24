@@ -71,6 +71,12 @@ b {
     text-align: right !important;
 }
 
+footer > .right {
+    position: absolute;
+    right: 48px;
+    top: 96px;
+}
+
 header{
      display: grid;
     grid-template-columns: auto auto;
