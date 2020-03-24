@@ -1,7 +1,19 @@
 @font-face {
- font-family: 'Literata';
-    font-weight: 400 700;
- src: url('Literata-VariableFont_wght.woff2') format('woff2');
+ font-family: 'Titillium';
+    font-weight: 400;
+ src: url('TitilliumWeb-Regular.woff2') format('woff2');
+}
+
+@font-face {
+ font-family: 'Titillium';
+    font-weight: 700;
+ src: url('TitilliumWeb-Bold.woff2') format('woff2');
+}
+
+@font-face {
+ font-family: 'Titillium';
+    font-weight: 900;
+    src: url('TitilliumWeb-Black.woff2') format('woff2');
 }
 
 
