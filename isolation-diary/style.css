@@ -469,3 +469,10 @@ footer > .copyright {
     height: 24px;   
 }
 }
+
+@media screen and (max-width: 380px) {
+    main > a .letter, main > div .letter{
+   font-size: 6rem;
+        margin-top: -24px;
+        }
+}
