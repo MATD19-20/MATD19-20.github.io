@@ -151,7 +151,7 @@ main {
 
 
 
-main > div .letter{
+main > a .letter{
         text-align: center;
         padding:12px;
         font-size: 24rem;
@@ -175,7 +175,7 @@ main > div .letter{
     }
 }
 
-main > div .description {
+main > a .description {
     text-align: center;
     font-size:1rem;
 }
@@ -210,7 +210,7 @@ footer {
          grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     }
     
-    main > div .letter{
+    main > a .letter{
         font-size: 20rem;
     }
     
