@@ -60,6 +60,7 @@ h1, {
 a {
   text-decoration: none;
     color: inherit;
+    font-size: inherit;
 }
 b {
     font-variation-settings: 'wght' 700;
@@ -158,6 +159,10 @@ main > div .letter{
         animation: isol 28s linear infinite;
         line-height: 100%;
         margin-top: -48px;
+}
+
+.no-anim {
+    animation: none !important;
 }
 
 @keyframes isol {
