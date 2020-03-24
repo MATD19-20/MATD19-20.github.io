@@ -200,7 +200,6 @@ main > a .letter, main > div .letter{
     text-align: center;
         padding:12px;
         font-size: 1rem;
-        animation: name-flipper 2s linear infinite;
 }
 .name::before {
     content: "";
