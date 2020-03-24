@@ -163,7 +163,7 @@ main > a .letter, main > div .letter{
         padding:12px;
         font-size: 24rem;
         font-family: Isolation !important;
-        animation: isol 28s linear infinite;
+        animation: isol 32s linear infinite;
         line-height: 100%;
         margin-top: -48px;
 }
@@ -178,7 +178,7 @@ main > a .letter, main > div .letter{
     }
     
     50%{
-        font-variation-settings: 'wght' 700;
+        font-variation-settings: 'wght' 800;
     }
 }
 
