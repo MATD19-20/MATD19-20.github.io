@@ -426,6 +426,9 @@ footer > .copyright {
     intro{
         grid-template-columns: 1fr;
     }
+    main > a .letter, main > div .letter{
+   font-size: 20rem;
+        }
     footer > .half {
     grid-column-start: 1;
     grid-column-end: 3;
