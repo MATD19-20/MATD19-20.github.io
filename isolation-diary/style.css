@@ -471,8 +471,14 @@ footer > .copyright {
 }
 
 @media screen and (max-width: 380px) {
+    main{
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
     main > a .letter, main > div .letter{
    font-size: 6rem;
         margin-top: -24px;
         }
+    .info > a {
+        padding-left: 12px;
+    }
 }
