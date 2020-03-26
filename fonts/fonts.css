@@ -1,0 +1,24 @@
+@font-face {
+ font-family: 'Titillium';
+    font-weight: 400;
+ src: url('TitilliumWeb-Regular.woff2') format('woff2');
+}
+
+@font-face {
+ font-family: 'Titillium';
+    font-weight: 700;
+ src: url('TitilliumWeb-Bold.woff2') format('woff2');
+}
+
+@font-face {
+ font-family: 'Titillium';
+    font-weight: 900;
+    src: url('TitilliumWeb-Black.woff2') format('woff2');
+}
+
+
+@font-face {
+ font-family: 'Isolation';
+    font-weight: 100 900;
+ src: url('IsolationGX.woff2') format('woff2');
+}

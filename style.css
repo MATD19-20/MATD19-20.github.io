@@ -1,0 +1,490 @@
+/* Breakpoints */
+
+/* XS */ @media screen and (max-width: 480px) {}
+
+/* S */ @media screen and (min-width: 480px) and (max-width: 719px) {}
+
+/* M */ @media screen and (min-width: 720px) and (max-width: 1279px) {}
+
+/* L */ @media screen and (min-width: 1280px) and (max-width: 1919px)  {}
+
+/* XL */ @media screen and (min-width: 1920px) {}
+
+:root {
+    --light: white;
+    --backdrop: #F2F2F2;
+    --dark: black;
+    --left-padding:128px;
+    --right-padding:128px;
+}
+
+
+body, html { 
+    --light: white;
+    --dark: black;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+html {
+     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--light);
+    font-size: 24px;
+    
+}
+
+body {
+    margin: 0;
+    font-family: 'Titillium', sans-serif;
+    font-weight: 400;
+    padding-left: var(--left-padding);
+    padding-right: var(--right-padding);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    background-color: var(--backdrop);
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+h1, {
+    animation: fade-in 1s ease forwards;
+    animation-delay: 0.25s;
+    opacity: 0;
+}
+a {
+  text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+b {
+    font-weight: 900;
+}
+
+.right {
+    text-align: right !important;
+}
+
+/* Header */
+
+header{
+     display: grid;
+    grid-template-columns: 2fr 1fr;
+    position: fixed;
+    z-index: 100;
+    background-color: var(--backdrop);
+    width: calc(100% - var(--left-padding) - var(--right-padding));;
+    left:0;
+    padding-left: var(--left-padding);
+    padding-right: var(--right-padding);
+    height: 96px;
+}
+
+.info {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px; 
+    justify-self:end;
+}
+
+.info > a {
+    padding-left: 24px;
+}
+
+header > div {
+    padding-top: 24px;
+    padding-bottom: 24px;
+} 
+
+
+
+intro{
+     display: grid;
+    grid-template-columns: 2fr 3fr;
+    position: relative;
+    padding-left: var(--left-padding);
+    padding-right: var(--right-padding);
+    grid-gap: 48px;
+}
+
+.intro-img > img {
+    max-height: 256px;
+    width:auto;
+    float: right;
+}
+
+
+
+/* Main */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    width:auto;
+    transition: 0.3s ease;
+    border-bottom: 1px solid var(--backdrop);
+    margin-top: 128px;
+}
+
+.box{
+    padding: 24px;
+    /*border-right: 3px dotted var(--dark);
+    border-bottom: 3px dotted var(--dark);*/
+    width: auto;
+    height:auto;
+    animation: fade-in 1s ease forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+    background-color: white;
+    border-right: 1px solid var(--backdrop);
+    border-bottom: 1px solid var(--backdrop);
+}
+.span-2{
+    grid-column: span 2;
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+        transform: translateX(-12px);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.box:nth-child(1){
+    animation-delay: 1s;
+}
+.box:nth-child(2){
+    animation-delay: 1.5s;
+}
+.box:nth-child(3){
+    animation-delay: 2s;
+}
+.box:nth-child(4){
+    animation-delay: 2.5s;
+}
+.box:nth-child(5){
+    animation-delay: 3s;
+}
+.box:nth-child(6){
+    animation-delay: 3.5s;
+}
+.box:nth-child(7){
+    animation-delay: 4s;
+}
+.box:nth-child(8){
+    animation-delay: 4.5s;
+}
+.box:nth-child(9){
+    animation-delay: 5s;
+}
+.box:nth-child(){
+    animation-delay: 5.5s;
+}
+
+
+
+main > a .letter, main > div .letter{
+        text-align: center;
+        padding:12px;
+        font-size: 20rem;
+        font-family: Isolation !important;
+        animation: isol 32s linear infinite;
+        line-height: 100%;
+        margin-top: -72px;
+}
+.name {
+    text-align: center;
+        padding:12px;
+        font-size: 1rem;
+}
+.name::before {
+    content: "";
+    animation: name-flipper 16s linear infinite alternate;
+}
+
+.no-anim {
+    animation: none !important;
+}
+
+@keyframes isol {
+    0%, 100%{
+        font-variation-settings: 'wght' 100;
+    }
+    
+    50%{
+        font-variation-settings: 'wght' 800;
+    }
+}
+
+@keyframes name-flipper {
+    0%, 7.5%{
+        content: "Keya";
+    }
+    
+    20%{
+        content: "Michaela";
+    }
+    32.5%{
+        content: "Simon";
+    }
+    45%{
+        content: "John";
+    }
+    57.5%{
+        content: "Eric";
+    }
+    70%{
+        content: "Mark";
+    }
+    82.5%{
+        content: "Genevieve";
+    }
+    95%, 100%{
+        content: "Adriana";
+    }
+}
+
+main > a .description, 
+main > div .description {
+    text-align: center;
+    font-size:1rem;
+}
+
+.day-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.day {
+    text-align: left;
+}
+.date {
+    text-align: right;
+}
+
+
+/* Footer */
+
+
+footer {
+    
+    background-color: var(--dark);
+    color: var(--light);
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+
+}
+
+footer > .half {
+    grid-column-start: 1;
+}
+
+footer > div {
+    padding-left: 96px;
+    padding-right: 96px;
+    padding-top: 128px;
+} 
+
+footer > .designer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    padding-top: 24px;
+    grid-gap: 36px;
+}
+
+.designer-name{
+    text-align: center;
+}
+
+.social {
+    display: grid;
+    grid-auto-columns: repeat(auto-fill, minmax(24px, 1fr));
+    justify-items:center;
+    grid-gap:12px;
+    width:96px;
+    margin: 0 auto;
+}
+
+.ico > img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.ico > a > img {
+    width: 24px;
+    grid-row: 1;
+}
+
+.ico {
+    grid-row: 1;
+}
+
+
+
+footer > .copyright {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+
+/* Spaces */
+
+.space-XL{
+    height: 256px;
+}
+
+.space-L{
+    height: 128px;
+}
+
+.space-M{
+    height: 64px;   
+}
+
+.space-M{
+    height: 48px;   
+}
+
+/* Media queries */
+
+@media screen and (min-width: 720px) and (max-width: 1279px) {
+    :root{
+        --left-padding:36px;
+        --right-padding:36px;
+    }
+    header{
+        grid-template-columns: 1fr 1fr;
+        height: 84px;
+    }
+     main > a .letter, main > div .letter{
+   font-size: 15rem;
+        }
+    footer > .half {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 719px) {
+   :root{
+        --left-padding:24px;
+        --right-padding:24px;
+    }
+    body{
+        font-size: 16px;
+    }
+    header{
+        grid-template-columns: 1fr 1fr;
+        height: 72px;
+    }
+    intro{
+        grid-template-columns: 1fr;
+    }
+    .intro-img > img {
+        float: left;
+    }
+    main > a .letter, main > div .letter{
+   font-size: 12rem;
+        }
+    .span-2{
+    grid-column: span 1;
+}
+    footer > .half {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    }
+    
+    footer > div {
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 96px;
+} 
+    .space-XL{
+    height: 196px;
+}
+
+.space-L{
+    height: 96px;
+}
+
+.space-M{
+    height: 48px;   
+}
+
+.space-M{
+    height: 36px;   
+}
+}
+
+@media screen and (max-width: 480px) {
+    :root{
+        --left-padding:12px;
+        --right-padding:12px;
+    }
+    body{
+        font-size: 16px;
+    }
+    header{
+        grid-template-columns: 1fr 1fr;
+        height: 72px;
+    }
+    intro{
+        grid-template-columns: 1fr;
+    }
+    .intro-img > img {
+        float: left;
+    }
+    main > a .letter, main > div .letter{
+   font-size: 10rem;
+        }
+    .span-2{
+    grid-column: span 1;
+}
+    footer > .half {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    }
+    footer > div {
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 72px;
+} 
+    
+    .space-XL{
+    height: 128px;
+}
+
+.space-L{
+    height: 72px;
+}
+
+.space-M{
+    height: 36px;   
+}
+
+.space-M{
+    height: 24px;   
+}
+}
+
+@media screen and (max-width: 380px) {
+    main{
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+    main > a .letter, main > div .letter{
+   font-size: 6rem;
+        margin-top: -24px;
+        }
+    .info > a {
+        padding-left: 12px;
+    }
+}
