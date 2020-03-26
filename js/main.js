@@ -1,23 +1,50 @@
 jQuery(document).ready(function(){
- $("a").on('click', function(event) {
+          $("div.designer").randomize("div.shuffle");
+     });
+     
+     
+     
+     (function($) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+            $.fn.randomize = function(childElem) {
+        return this.each(function() {
+      var $this = $(this);
+      var elems = $this.children(childElem);
 
-      // Store hash
-      var hash = this.hash;
+      elems.sort(function() { return (Math.round(Math.random())-0.5); });  
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTo(hash)
-      }, 800, function(){
+      $this.detach(childElem);  
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
+      for(var i=0; i < elems.length; i++)
+        $this.append(elems[i]);      
+            
+  });    
+}
+})(jQuery);
+
+//jQuery(document).ready(function(){
+// $("a").on('click', function(event) {
+//
+//    // Make sure this.hash has a value before overriding default behavior
+//    if (this.hash !== "") {
+//      // Prevent default anchor click behavior
+//      event.preventDefault();
+//
+//      // Store hash
+//      var hash = this.hash;
+//
+//      // Using jQuery's animate() method to add smooth page scroll
+//      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+//      $('html, body').animate({
+//        scrollTo(hash)
+//      }, 800, function(){
+//
+//        // Add hash (#) to URL when done scrolling (default click behavior)
+//        window.location.hash = hash;
+//      });
+//    } // End if
+//  });
+//});
+     
+     
+     
