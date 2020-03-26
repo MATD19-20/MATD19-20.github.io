@@ -121,7 +121,7 @@ intro{
 
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
     width:auto;
     transition: 0.3s ease;
     border-bottom: 1px solid var(--backdrop);
@@ -193,7 +193,7 @@ main {
 main > a .letter, main > div .letter{
         text-align: center;
         padding:12px;
-        font-size: 20rem;
+        font-size: 18rem;
         font-family: Isolation !important;
         animation: isol 32s linear infinite;
         line-height: 100%;
