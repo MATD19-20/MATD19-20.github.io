@@ -1,5 +1,6 @@
 jQuery(document).ready(function(){
           $("div.designer").randomize("div.shuffle");
+        $("main.random").randomize("div.box");
      });
      
      
