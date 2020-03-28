@@ -196,7 +196,7 @@ main > a .letter, main > div .letter{
         font-size: 18rem;
         font-family: Isolation !important;
         animation: isol 32s linear infinite;
-        line-height: 100%;
+        line-height: 125%;
         margin-top: -72px;
 }
 .name {
