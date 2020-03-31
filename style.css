@@ -198,7 +198,7 @@ main > a .letter, main > div .letter{
         padding:12px;
         font-size: 18rem;
         font-family: Isolation !important;
-        animation: isol 25s linear infinite alternate;
+        animation: isol 27s linear infinite alternate;
         line-height: 125%;
         margin-top: -72px;
 }
@@ -209,7 +209,7 @@ main > a .letter, main > div .letter{
 }
 .name::before {
     content: "";
-    animation: name-flipper 25s linear infinite alternate;
+    animation: name-flipper 27s linear infinite alternate;
 }
 
 .no-anim {
@@ -217,58 +217,64 @@ main > a .letter, main > div .letter{
 }
 
 @keyframes isol {
-    0%, 7.5% {
+    0%, 7.5%{
         font-variation-settings: 'wght' 100;
     }
-    12.5%, 20% {
+    15%, 22.5%{
         font-variation-settings: 'wght' 200;
     }
     
-    25%, 32.5%{
+    30%, 37.5%{
         font-variation-settings: 'wght' 300;
     }
-    40%, 47.5%{
+    45%, 52.5%{
         font-variation-settings: 'wght' 400;
     }
-    52.5%, 60%{
+    55%, 62.5%{
         font-variation-settings: 'wght' 500;
     }
     65%, 72.5%{
         font-variation-settings: 'wght' 600;
     }
-    77.5%, 85%{
+    75%, 82.5%{
         font-variation-settings: 'wght' 700;
     }
-    90%, 100%{
+    85%, 92.5%{
         font-variation-settings: 'wght' 800;
+    }
+    95%, 100%{
+        font-variation-settings: 'wght' 900;
     }
 }
 
 @keyframes name-flipper {
-    0%, 12.5%{
+    0%, 15%{
         content: "Keya";
     }
     
-    15%{
+    16%, 30% {
         content: "Michaela";
     }
-    27.5%{
+    31%, 45%{
         content: "Simon";
     }
-    45%{
+    46%, 55%{
         content: "John";
     }
-    55.5%{
+    56%, 65%{
         content: "Eric";
     }
-    68%{
+    66%, 75%{
         content: "Mark";
     }
-    82%{
+    76%, 85%{
         content: "Genevieve";
     }
-    90%, 100%{
+    86%, 95%{
         content: "Adriana";
+    }
+    96%, 100%{
+        content: "José";
     }
 }
 
