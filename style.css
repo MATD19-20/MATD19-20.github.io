@@ -217,64 +217,70 @@ main > a .letter, main > div .letter{
 }
 
 @keyframes isol {
-    0%, 7.5%{
+    0%, 4%{
         font-variation-settings: 'wght' 100;
     }
-    15%, 22.5%{
+    7%, 15%{
         font-variation-settings: 'wght' 200;
     }
     
-    30%, 37.5%{
+    18%, 26%{
         font-variation-settings: 'wght' 300;
     }
-    45%, 52.5%{
+    29%, 37%{
         font-variation-settings: 'wght' 400;
     }
-    55%, 62.5%{
+    40%, 48%{
         font-variation-settings: 'wght' 500;
     }
-    65%, 72.5%{
+    51%, 59%{
         font-variation-settings: 'wght' 600;
     }
-    75%, 82.5%{
+    62%, 70%{
         font-variation-settings: 'wght' 700;
     }
-    85%, 92.5%{
+    73%, 81%{
         font-variation-settings: 'wght' 800;
     }
-    95%, 100%{
+    84%, 92%{
         font-variation-settings: 'wght' 900;
+    }
+    95%, 100%{
+        font-variation-settings: 'wght' 1000;
     }
 }
 
 @keyframes name-flipper {
-    0%, 15%{
+    0%, 4%{
         content: "Keya";
     }
     
-    16%, 30% {
+    11% {
         content: "Michaela";
     }
-    31%, 45%{
+    22% {
         content: "Simon";
     }
-    46%, 55%{
+    33% {
         content: "John";
     }
-    56%, 65%{
+    44% {
         content: "Eric";
     }
-    66%, 75%{
+    55%{
         content: "Mark";
     }
-    76%, 85%{
+    66%{
         content: "Genevieve";
     }
-    86%, 95%{
+    77%{
         content: "Adriana";
     }
-    96%, 100%{
+    88%{
         content: "José";
+    }
+    95%, 100%{
+        content: "Ryan";
     }
 }
 
