@@ -369,6 +369,47 @@ footer > .copyright {
 }
 
 
+.biscuit-message{
+    left: 0;
+    bottom: 0px;
+    padding: 24px;
+    width: auto;
+    text-align: center;
+    background-color: var(--light);
+}
+
+.biscuit-message > .cookie {
+    font-size: 2rem;
+    animation: rotate 8s infinite;
+    width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    margin: 0 auto;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.biscuit-message > .btn {
+    font-family: 'Titillium', sans-serif;
+    border: 1px #000 solid;
+    width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 12px auto;
+}
+
+
 /* Spaces */
 
 .space-XL{

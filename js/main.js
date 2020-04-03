@@ -3,7 +3,7 @@ jQuery(document).ready(function(){
         $("main.random").randomize("div.box");
      });
      
-     
+  
      
      (function($) {
 
@@ -22,6 +22,13 @@ jQuery(document).ready(function(){
   });    
 }
 })(jQuery);
+
+
+function biscuits() {
+    $(".biscuit-message").toggle();
+} 
+
+
 
 //jQuery(document).ready(function(){
 // $("a").on('click', function(event) {
