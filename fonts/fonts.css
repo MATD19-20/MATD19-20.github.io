@@ -19,6 +19,12 @@
 
 @font-face {
  font-family: 'Isolation';
-    font-weight: 100 900;
+    font-weight: 100 1000;
  src: url('IsolationGX.woff2') format('woff2');
+}
+
+@font-face {
+ font-family: 'IsolationTemp';
+    font-weight: 100 900;
+ src: url('IsolationTempGX.woff2') format('woff2');
 }
