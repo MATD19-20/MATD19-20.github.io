@@ -520,6 +520,9 @@ footer > .copyright {
      main > a .letter, main > div .letter{
    font-size: 15rem;
         }
+    main > a .letter-temp, main > div .letter-temp{
+        font-size: 15rem;
+        }
     footer > .half {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -547,6 +550,9 @@ footer > .copyright {
     main > a .letter, main > div .letter{
    font-size: 12rem;
         }
+    main > a .letter-temp, main > div .letter-temp{
+        12rem;
+    }
     .span-2{
     grid-column: span 1;
 }
@@ -598,6 +604,9 @@ footer > .copyright {
     main > a .letter, main > div .letter{
    font-size: 10rem;
         }
+    main > a .letter-temp, main > div .letter-temp{
+        10rem;
+    }
     .span-2{
     grid-column: span 1;
 }
@@ -636,6 +645,10 @@ footer > .copyright {
    font-size: 6rem;
         margin-top: -24px;
         }
+    main > a .letter-temp, main > div .letter-temp{
+        font-size: 6rem;
+        margin-top: -24px;
+    }
     .info > a {
         padding-left: 12px;
     }
