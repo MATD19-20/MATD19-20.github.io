@@ -441,7 +441,7 @@ main > a .letter-temp-2, main > div .letter-temp-2{
     }
 }
 
-@keyframes name-flipper-temp-2 {
+@keyframes name-flipper-temp-3 {
     0%, 4%{
         content: "Keya";
     }
