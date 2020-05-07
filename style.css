@@ -250,7 +250,7 @@ main > a .letter-temp-2, main > div .letter-temp-2{
         margin-top: -72px;
 }
 
-.name, .name-temp, .name-temp-2 {
+.name, .name-temp, .name-temp-2, .name-temp-3 {
     text-align: center;
         padding:12px;
         font-size: 1rem;
@@ -269,6 +269,11 @@ main > a .letter-temp-2, main > div .letter-temp-2{
 .name-temp-2::before {
     content: "";
     animation: name-flipper-temp-2 27s linear infinite alternate;
+}
+
+.name-temp-3::before {
+    content: "";
+    animation: name-flipper-temp-3 27s linear infinite alternate;
 }
 
 .no-anim {
@@ -430,6 +435,37 @@ main > a .letter-temp-2, main > div .letter-temp-2{
     }
     89%{
         content: "José";
+    }
+    96%, 100%{
+        content: "Ryan";
+    }
+}
+
+@keyframes name-flipper-temp-2 {
+    0%, 4%{
+        content: "Keya";
+    }
+    
+    13% {
+        content: "Michaela";
+    }
+    26% {
+        content: "Simon";
+    }
+    39% {
+        content: "John";
+    }
+    51% {
+        content: "Eric";
+    }
+    64%{
+        content: "Mark";
+    }
+    76%{
+        content: "Genevieve";
+    }
+    89%{
+        content: "Adriana";
     }
     96%, 100%{
         content: "Ryan";
