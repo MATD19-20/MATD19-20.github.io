@@ -239,7 +239,18 @@ main > a .letter-temp, main > div .letter-temp{
         line-height: 125%;
         margin-top: -72px;
 }
-.name, .name-temp {
+
+main > a .letter-temp-2, main > div .letter-temp-2{
+        text-align: center;
+        padding:12px;
+        font-size: 18rem;
+        font-family: IsolationTemp-2 !important;
+        animation: isol-temp 27s linear infinite alternate;
+        line-height: 125%;
+        margin-top: -72px;
+}
+
+.name, .name-temp, .name-temp-2 {
     text-align: center;
         padding:12px;
         font-size: 1rem;
@@ -253,6 +264,11 @@ main > a .letter-temp, main > div .letter-temp{
 .name-temp::before {
     content: "";
     animation: name-flipper-temp 27s linear infinite alternate;
+}
+
+.name-temp-2::before {
+    content: "";
+    animation: name-flipper-temp-2 27s linear infinite alternate;
 }
 
 .no-anim {
@@ -388,6 +404,39 @@ main > a .letter-temp, main > div .letter-temp{
         font-variation-settings: 'wght' 900;
     }
 }
+
+@keyframes name-flipper-temp-2 {
+    0%, 4%{
+        content: "Keya";
+    }
+    
+    13% {
+        content: "Michaela";
+    }
+    26% {
+        content: "Simon";
+    }
+    39% {
+        content: "Eric";
+    }
+    51% {
+        content: "Mark";
+    }
+    64%{
+        content: "Genevieve";
+    }
+    76%{
+        content: "Adriana";
+    }
+    89%{
+        content: "José";
+    }
+    96%, 100%{
+        content: "Ryan";
+    }
+}
+
+
 
 main > a .description, 
 main > div .description {

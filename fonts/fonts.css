@@ -28,3 +28,9 @@
     font-weight: 100 900;
  src: url('IsolationTempGX.woff2') format('woff2');
 }
+
+@font-face {
+ font-family: 'IsolationTemp-2';
+    font-weight: 100 900;
+ src: url('IsolationTempGX-2.woff2') format('woff2');
+}
